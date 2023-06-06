@@ -30,6 +30,7 @@ const NavBar = () => {
                 boxSize="50px"
                 borderRadius="full"
                 objectFit="cover"
+                w={{ base: "full", md: "auto", lg: "auto" }}
                 src="https://img.freepik.com/premium-vector/orange-wolf-esport-logo-wolf-esport-logo-is-orange_572499-163.jpg"
                 alt="blog logo"
               />
@@ -40,24 +41,36 @@ const NavBar = () => {
               spacing={4}
               display={{ base: "none", md: "flex" }}
             >
-              <chakra.a href={"/"}>Home</chakra.a>
-              <chakra.a href={"/games"}>Games</chakra.a>
-              <chakra.a href={"/about"}>About us</chakra.a>
+              <chakra.a href={"/"} w={{ base: "full", md: "auto", lg: "auto" }}>
+                Home
+              </chakra.a>
+              <chakra.a
+                href={"/games"}
+                w={{ base: "full", md: "auto", lg: "auto" }}
+              >
+                Games
+              </chakra.a>
+              <chakra.a
+                href={"/about"}
+                w={{ base: "full", md: "auto", lg: "auto" }}
+              >
+                About us
+              </chakra.a>
             </HStack>
           </HStack>
           <HStack spacing={7} direction={"row"}>
             <Button
               as={"a"}
               fontSize={"sm"}
+              w={{ base: "full", md: "auto", lg: "auto" }}
               fontWeight={400}
-              variant={"link"}
               href={"/login"}
             >
               Sign In
             </Button>
             <Button
               as={"a"}
-              display={{ base: "none", md: "inline-flex" }}
+              w={{ base: "full", md: "auto", lg: "auto" }}
               fontSize={"sm"}
               fontWeight={600}
               color={"white"}
