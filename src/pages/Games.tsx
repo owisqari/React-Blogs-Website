@@ -17,12 +17,12 @@ const Games = () => {
   const [isLoading, setIsLoading] = useState(false);
   const getGames = async () => {
     setIsLoading(true);
-    const url = "https://steam2.p.rapidapi.com/search/Counter/page/2";
+    const url = import.meta.env.VITE_API_KEY;
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "fffd559ce7msh64ef6fcb382e2a2p1b682ejsn21e409321a98",
-        "X-RapidAPI-Host": "steam2.p.rapidapi.com",
+        "X-RapidAPI-Key": import.meta.env.VITE_X_RAPIDAPI_KEY,
+        "X-RapidAPI-Host": import.meta.env.VITE_X_RAPIDAPI_HOST,
       },
     };
 
