@@ -15,16 +15,15 @@ const HeroSec = () => {
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            Blogs <br />
-            <Text as={"span"} color={"orange.400"}>
+            GamePivot <br />
+            <Text as={"span"} color={"orange.600"}>
               Find out more
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            A blog, short for weblog, is a frequently updated web page used for
-            personal commentary or business content. Blogs are often interactive
-            and include sections at the bottom of individual blog posts where
-            readers can leave comments.
+            GamePivot is where you can find approachable video game coverage
+            anyone can enjoy. Video game coverage, Gaming News, Jobs for Gamers,
+            Gaming
           </Text>
           <Stack
             direction={"column"}
@@ -35,13 +34,14 @@ const HeroSec = () => {
           >
             <Button
               colorScheme={"orange"}
-              bg={"orange.400"}
+              bg={"orange.600"}
+              color={"white"}
               rounded={"full"}
               px={6}
               as={"a"}
-              href={"/blogs"}
+              href={"/games"}
               _hover={{
-                bg: "orange.500",
+                bg: "orange.700",
               }}
             >
               Get Started

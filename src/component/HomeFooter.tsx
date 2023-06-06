@@ -58,9 +58,9 @@ const HomeFooter = () => {
           align={"center"}
         >
           <Stack direction={"row"} spacing={6}>
-            <Link href={"#"}>Home</Link>
+            <Link href={"/"}>Home</Link>
             <Link href={"#"}>About</Link>
-            <Link href={"#"}>Blog</Link>
+            <Link href={"/games"}>Games</Link>
             <Link href={"#"}>Contact</Link>
           </Stack>
         </Container>
@@ -79,7 +79,7 @@ const HomeFooter = () => {
             justify={{ base: "center", md: "space-between" }}
             align={{ base: "center", md: "center" }}
           >
-            <Text>© 2022 Chakra Templates. All rights reserved</Text>
+            <Text>© 2022 Owis Bukhari. All rights reserved</Text>
             <Stack direction={"row"} spacing={6}>
               <SocialButton label={"Twitter"} href={"#"}>
                 <FaTwitter />

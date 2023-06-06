@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import { Box, SimpleGrid, Icon, Text, Stack, Flex } from "@chakra-ui/react";
-import { FcReadingEbook, FcReading, FcShare } from "react-icons/fc";
+import { FaMoneyBillWave } from "react-icons/fa";
+import { MdGames, MdOutlineConnectWithoutContact } from "react-icons/md";
 
 interface IFeatureProps {
   title: string;
@@ -34,24 +35,31 @@ const Feature = () => {
     <Box mb={16} p={4}>
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Features
-          icon={<Icon as={FcReadingEbook} w={10} h={10} />}
-          title={"Writing Blogs"}
+          icon={<Icon as={MdGames} w={10} h={10} color={"black"} />}
+          title={"Explore Games"}
           text={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+            "The Explore Games feature allows users to browse through a wide selection of games, both new and old. Users can filter games by genre, platform, release date, and other criteria. They can also read reviews and watch trailers to learn more about the games that interest them."
           }
         />
         <Features
-          icon={<Icon as={FcReading} w={10} h={10} />}
-          title={"Reading Blogs"}
+          icon={<Icon as={FaMoneyBillWave} w={10} h={10} color={"black"} />}
+          title={"Buy Games"}
           text={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+            "The Buy Games feature allows users to purchase games directly from the game hub website. Users can pay with a credit card, PayPal, or other supported payment method. Once a game has been purchased, it can be downloaded and installed on the user's computer or gaming console."
           }
         />
         <Features
-          icon={<Icon as={FcShare} w={10} h={10} />}
-          title={"Sharing Blogs"}
+          icon={
+            <Icon
+              as={MdOutlineConnectWithoutContact}
+              w={10}
+              h={10}
+              color={"black"}
+            />
+          }
+          title={"Connect With Gamers"}
           text={
-            "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore..."
+            "The Connect to Gamers feature allows users to connect with other gamers who share their interests. Users can create a profile, join groups, and chat with other gamers. They can also participate in online tournaments and events."
           }
         />
       </SimpleGrid>
