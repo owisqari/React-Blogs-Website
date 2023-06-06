@@ -12,7 +12,7 @@ interface IGameCardProps {
   released: string;
 }
 const Games = () => {
-  const [game, gameUsers] = useState([]);
+  const [game, setGames] = useState([]);
 
   const [isLoading, setIsLoading] = useState(false);
   const getGames = async () => {
@@ -32,7 +32,7 @@ const Games = () => {
       })
       .then((data) => {
         setIsLoading(false);
-        gameUsers(data);
+        setGames(data);
       });
   };
   useEffect(() => {
