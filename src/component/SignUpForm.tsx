@@ -77,10 +77,10 @@ const SignUpForm = () => {
               <Button
                 loadingText="Submitting"
                 size="lg"
-                bg={"orange.400"}
+                bg={"orange.500"}
                 color={"white"}
                 _hover={{
-                  bg: "orange.500",
+                  bg: "orange.600",
                 }}
               >
                 Sign up

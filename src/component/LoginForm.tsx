@@ -21,7 +21,7 @@ const LoginForm = () => {
     >
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
-          <Heading fontSize={"4xl"}>Sign in to your account</Heading>
+          <Heading fontSize={"4xl"}>Login to your account</Heading>
         </Stack>
         <Box
           rounded={"lg"}
@@ -48,13 +48,13 @@ const LoginForm = () => {
                 <Link color={"orange.400"}>Forgot password?</Link>
               </Stack>
               <Button
-                bg={"orange.400"}
+                bg={"orange.500"}
                 color={"white"}
                 _hover={{
-                  bg: "orange.500",
+                  bg: "orange.600",
                 }}
               >
-                Sign in
+                Login
               </Button>
             </Stack>
           </Stack>

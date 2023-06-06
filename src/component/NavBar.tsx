@@ -28,7 +28,7 @@ const NavBar = () => {
             <Box>
               <Image
                 boxSize="50px"
-                borderRadius="full"
+                borderRadius="15px"
                 objectFit="cover"
                 w={{ base: "full", md: "auto", lg: "auto" }}
                 src="https://img.freepik.com/premium-vector/orange-wolf-esport-logo-wolf-esport-logo-is-orange_572499-163.jpg"
@@ -66,7 +66,7 @@ const NavBar = () => {
               fontWeight={400}
               href={"/login"}
             >
-              Sign In
+              Login
             </Button>
             <Button
               as={"a"}
@@ -74,10 +74,10 @@ const NavBar = () => {
               fontSize={"sm"}
               fontWeight={600}
               color={"white"}
-              bg={"orange.600"}
+              bg={"orange.500"}
               href={"/signup"}
               _hover={{
-                bg: "oarnge.700",
+                bg: "oarnge.600",
               }}
             >
               Sign Up

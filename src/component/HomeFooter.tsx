@@ -46,7 +46,7 @@ const HomeFooter = () => {
   return (
     <>
       <Box
-        bg={useColorModeValue("gray.50", "gray.900")}
+        bg={useColorModeValue("gray.100", "gray.900")}
         color={useColorModeValue("gray.700", "gray.200")}
       >
         <Container
@@ -59,9 +59,9 @@ const HomeFooter = () => {
         >
           <Stack direction={"row"} spacing={6}>
             <Link href={"/"}>Home</Link>
-            <Link href={"#"}>About</Link>
+            <Link href={"/about"}>About</Link>
             <Link href={"/games"}>Games</Link>
-            <Link href={"#"}>Contact</Link>
+            <Link href={"http://owisbukhari@gmail.com"}>Contact</Link>
           </Stack>
         </Container>
 
@@ -81,13 +81,22 @@ const HomeFooter = () => {
           >
             <Text>© 2022 Owis Bukhari. All rights reserved</Text>
             <Stack direction={"row"} spacing={6}>
-              <SocialButton label={"Twitter"} href={"#"}>
+              <SocialButton
+                label={"Twitter"}
+                href={"https://twitter.com/OwisBukhari"}
+              >
                 <FaTwitter />
               </SocialButton>
-              <SocialButton label={"Linkedin"} href={"#"}>
+              <SocialButton
+                label={"Linkedin"}
+                href={"https://www.linkedin.com/in/owis-bukhari-6a6b44184/"}
+              >
                 <FaLinkedin />
               </SocialButton>
-              <SocialButton label={"FaGithub"} href={"#"}>
+              <SocialButton
+                label={"FaGithub"}
+                href={"https://github.com/owisqari"}
+              >
                 <FaGithub />
               </SocialButton>
             </Stack>

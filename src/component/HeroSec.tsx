@@ -16,7 +16,7 @@ const HeroSec = () => {
             lineHeight={"110%"}
           >
             GamePivot <br />
-            <Text as={"span"} color={"orange.600"}>
+            <Text as={"span"} color={"orange.500"}>
               Find out more
             </Text>
           </Heading>
@@ -34,14 +34,14 @@ const HeroSec = () => {
           >
             <Button
               colorScheme={"orange"}
-              bg={"orange.600"}
+              bg={"orange.500"}
               color={"white"}
               rounded={"full"}
               px={6}
               as={"a"}
               href={"/games"}
               _hover={{
-                bg: "orange.700",
+                bg: "orange.600",
               }}
             >
               Get Started

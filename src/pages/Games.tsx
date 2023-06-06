@@ -44,7 +44,7 @@ const Games = () => {
       <Container maxW={"7xl"} p="12">
         <Heading as="h2" marginTop="5">
           Latest{" "}
-          <Text as={"span"} color={"orange.600"}>
+          <Text as={"span"} color={"orange.500"}>
             Games
           </Text>
         </Heading>
