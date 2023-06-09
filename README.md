@@ -1,9 +1,10 @@
-GamePivot
+## GamePivot
 
 Live Demo: https://gamepivot.netlify.app
 
 GamePivot is a web app that displays new games and their prices. It is a great way to stay up-to-date on the latest releases and find the best deals.
-Features
+
+# Features
 
     Displays new games
     Shows prices for games
