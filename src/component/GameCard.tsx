@@ -42,12 +42,10 @@ const GameCard = (props: IBlogCardProps) => {
             >
               <Link textDecoration="none" _hover={{ textDecoration: "none" }}>
                 <Image
-                  borderRadius="lg"
                   src={props.image}
-                  w={{ base: "100%", sm: "85%" }}
-                  h={{ base: "100%", sm: "85%" }}
-                  alt="some good alt text"
-                  objectFit="contain"
+                  objectFit={"cover"}
+                  w={"16rem"}
+                  h={"8rem"}
                 />
               </Link>
             </Box>

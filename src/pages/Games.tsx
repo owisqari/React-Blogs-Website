@@ -57,9 +57,10 @@ const Games = () => {
           width="100%"
         >
           {isLoading && <div>Loading...</div>}
-          {game.map((game: IGameCardProps) => {
+          {game.map((game: IGameCardProps, id) => {
             return (
               <GameCard
+                key={id}
                 image={game.imgUrl}
                 title={game.title}
                 description={game.reviewSummary}

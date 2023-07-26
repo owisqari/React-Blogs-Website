@@ -6,7 +6,7 @@ import SignUpPage from "./pages/SignUpPage";
 import AboutUs from "./pages/AboutUs";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <>
       <Routes>
@@ -18,5 +18,5 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 export default App;
